@@ -1,0 +1,18 @@
+.top-bar {
+    background-color: #4575c1;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+li {
+    padding: 10px 15px;
+    color: #d0d7e2;
+}
+
+li:hover {
+    color: #eff1f4;
+    cursor: pointer;
+}
