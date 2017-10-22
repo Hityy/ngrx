@@ -1,7 +1,7 @@
 import { AuthState } from './auth-state.interfaces';
 import { AuthStateAction } from './auth-state.actions';
-import * as AuthActions from 'apps/app/src/app/auth/+state/auth-state.actions';
-import { authStateInitialState } from 'apps/app/src/app/auth/+state/auth-state.init';
+import * as AuthActions from './auth-state.actions';
+import { authStateInitialState } from './auth-state.init';
 
 export function authStateReducer(state: AuthState = authStateInitialState, action: AuthStateAction): AuthState {
   switch (action.type) {

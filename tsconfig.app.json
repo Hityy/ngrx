@@ -2,10 +2,12 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/app",
-    "module": "es2015",
+    "module": "es2016",
+    "types": [],
     "baseUrl": ".",
     "paths": {
       "@app":["app/*"],
+      "@tv": ["app/src/app"],
       "@ngrx/*": [
         "libs/*"
       ]

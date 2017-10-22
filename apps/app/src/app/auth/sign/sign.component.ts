@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from '../../../models/user.model';
 import { Store } from '@ngrx/store';
-import { AuthState, AuthStateState } from 'apps/app/src/app/auth/+state/auth-state.interfaces';
+import { AuthState, AuthStateState } from '../+state/auth-state.interfaces';
 import { NgForm } from '@angular/forms';
 import * as fromActions from '../+state/auth-state.actions';
 

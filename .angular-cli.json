@@ -7,7 +7,7 @@
     {
       "name": "app",
       "root": "apps\\app\\src",
-      "outDir": "dist/apps/app",
+      "outDir": "dist/browser",
       "assets": [
         "assets",
         "favicon.ico"
@@ -30,18 +30,19 @@
       }
     },
     {
-      "name": "raz",
-      "root": "apps\\raz\\src",
-      "outDir": "dist/apps/raz",
+      "name": "server",
+      "platform": "server",
+      "root": "apps\\app\\src",
+      "outDir": "dist/server",
       "assets": [
         "assets",
         "favicon.ico"
       ],
       "index": "index.html",
-      "main": "main.ts",
+      "main": "main.server.ts",
       "polyfills": "polyfills.ts",
       "test": "../../../test.js",
-      "tsconfig": "../../../tsconfig.app.json",
+      "tsconfig": "../../../tsconfig.server.json",
       "testTsconfig": "../../../tsconfig.spec.json",
       "prefix": "app",
       "styles": [

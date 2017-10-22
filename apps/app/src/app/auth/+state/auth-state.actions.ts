@@ -1,4 +1,4 @@
-import { User } from 'apps/app/src/models/user.model';
+import { User } from '../../../models/user.model';
 import { Action } from '@ngrx/store';
 
 export const SIGN_UP = 'SIGN_UP';

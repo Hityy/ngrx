@@ -8,14 +8,17 @@ import { AuthStateEffects } from './+state/auth-state.effects';
 import { SignComponent } from './sign/sign.component';
 
 // Material design
-import { HttpService } from 'apps/app/src/services/http.service';
-
+import { HttpService } from '../../services/http.service';
+import {MatButtonModule} from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   imports: [
     CommonModule,
     StoreModule.forFeature('authState', authStateReducer, { initialState: authStateInitialState }),
-    EffectsModule.forFeature([AuthStateEffects])
+    EffectsModule.forFeature([AuthStateEffects]),
+    BrowserAnimationsModule,
+    MatButtonModule,
   ],
   declarations: [SignComponent],
   providers: [AuthStateEffects, HttpService],

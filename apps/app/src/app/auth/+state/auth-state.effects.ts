@@ -3,11 +3,11 @@ import { Effect, Actions } from '@ngrx/effects';
 import { DataPersistence } from '@nrwl/nx';
 import { of } from 'rxjs/observable/of';
 import { AuthStateState } from './auth-state.interfaces';
-import * as AuthActions from 'apps/app/src/app/auth/+state/auth-state.actions';
+import * as AuthActions from './auth-state.actions';
 import { Observable } from 'rxjs/Observable';
 import { Action } from '@ngrx/store';
 import { Http, Response, Headers } from '@angular/http';
-import * as fromHttpService from 'apps/app/src/services/http.service';
+import * as fromHttpService from '../../../services/http.service';
 
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/do';

@@ -13,14 +13,14 @@ import { RootComponent } from './root/root.component';
 import { TopBarComponent } from './root/top-bar/top-bar.component';
 import { AuthModule } from './auth/auth.module';
 import { HttpModule } from '@angular/http';
-import { AppRoutingModule } from 'apps/app/src/app/app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 import { PageComponent } from './root/page/page.component';
 import { FormsModule } from "@angular/forms";
 
 
 @NgModule({
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({appId: 'program-tv'}),
     FormsModule,
     HttpModule,
     NxModule.forRoot(),
